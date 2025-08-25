@@ -1,0 +1,160 @@
+body{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 95%);
+  height: 100vh;
+  background-image: url('images/blackboard-inscribed-with-scientific-formulas-calculations.webp');
+  background-size: cover;
+  background-position: center;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  
+}
+
+#calculator{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: hsl(0, 0%, 15%);
+  border-radius: 15px;
+  max-width: 500px;
+  overflow: hidden;
+}
+#display{
+  width: 100%;
+  padding: 20px;
+  font-size: 5rem;
+  text-align: left;
+  border: none;
+  background-color: hsl(0, 0%, 20%);
+  color: white;
+}
+
+#keys{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 25px;
+}
+
+button{
+  width:65px;
+  height: 65px;
+  border-radius: 50px;
+  border: none;
+  background: hsl(0, 0%, 30%);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover{
+  background-color: hsl(0, 0%, 40%);
+}
+button:active{
+  background-color: hsl(0, 0%, 50%);
+}
+.operator-btn{
+  background: hsl(39, 100%, 50%);
+}
+.operator-btn:hover{
+  background: hsl(39, 100%, 65%);
+}
+.operator-btn:active{
+  background: hsl(39, 100%, 70%);
+}
+
+@media (max-width: 991px) {
+  #calculator {
+    max-width: 400px;
+  }
+  #display {
+    font-size: 3.5rem;
+    padding: 16px;
+  }
+  button {
+    width: 55px;
+    height: 55px;
+    font-size: 1.2rem;
+  }
+  #keys {
+    padding: 18px;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 881px) {
+  #calculator {
+    max-width: 350px;
+  }
+  #display {
+    font-size: 3rem;
+    padding: 14px;
+  }
+  button {
+    width: 48px;
+    height: 48px;
+    font-size: 1rem;
+  }
+  #keys {
+    padding: 14px;
+    gap: 7px;
+  }
+}
+
+@media (max-width: 768px) {
+  #calculator {
+    max-width: 300px;
+  }
+  #display {
+    font-size: 2.5rem;
+    padding: 12px;
+  }
+  button {
+    width: 42px;
+    height: 42px;
+    font-size: 0.95rem;
+  }
+  #keys {
+    padding: 10px;
+    gap: 6px;
+  }
+}
+
+@media (max-width: 618px) {
+  #calculator {
+    max-width: 240px;
+  }
+  #display {
+    font-size: 1.7rem;
+    padding: 8px;
+  }
+  button {
+    width: 32px;
+    height: 32px;
+    font-size: 0.85rem;
+  }
+  #keys {
+    padding: 6px;
+    gap: 4px;
+  }
+}
+
+@media (max-width: 350px) {
+  #calculator {
+    max-width: 180px;
+  }
+  #display {
+    font-size: 1.1rem;
+    padding: 4px;
+  }
+  button {
+    width: 22px;
+    height: 22px;
+    font-size: 0.7rem;
+  }
+  #keys {
+    padding: 2px;
+    gap: 2px;
+  }
+}
